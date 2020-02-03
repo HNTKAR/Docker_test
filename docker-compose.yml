@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  test_img:
+    build: .
+    ports:
+      - "999:999"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    image: test
+    container_name: test
